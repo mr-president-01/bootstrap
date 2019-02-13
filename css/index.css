@@ -29,6 +29,17 @@ iframe{
 }
 .badge-info{
     width: 60px;
+    margin: 0 40px;
 }
+.badge-pill{
+    display: flex;
+    justify-content: center;
+}
+.carousel{
 
+}
+.navbar-brand, h2{
+    font-family: impact;
+    font-size: 1.3rem;
+}
 
