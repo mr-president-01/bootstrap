@@ -1,0 +1,11 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #eaeff5;
+}
+.banner{
+    margin-top: 62px;
+}
+h2{
+    font-size: 36px;
+}
