@@ -10,8 +10,9 @@ h2{
     font-size: 36px;
 }
 .buttons-services{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1fr;
     margin: 20px auto;
 }
 footer{
