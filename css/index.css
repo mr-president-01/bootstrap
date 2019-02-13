@@ -49,4 +49,12 @@ iframe{
 h6{
     text-align: center;
 }
+.select-form{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+}
+.input{
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+}
 

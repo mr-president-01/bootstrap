@@ -29,13 +29,13 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Contacts</a>
+                <a class="nav-link" href="#contacts" tabindex="-1">Contacts</a>
               </li>
             </ul>
           </div>
@@ -97,7 +97,7 @@
         </div>
       </div>
 
-      <h2>Services</h2>
+      <h2 id="services">Services</h2>
       <div class="buttons-services">
         <span class="badge badge-pill badge-info"><img src="img/resticon.png" alt="restaurant icon"></span>
         <span class="badge badge-pill badge-info"><img src="img/baricon.png" alt="bar icon"></span>
@@ -135,7 +135,7 @@
         </a>
       </div>
 
-      <h2>Featured HOTELS</h2>
+      <h2 id="features">Features</h2>
       <div class="row justify-content-around">
         <div class="card mb-3 col-12">
           <div class="row no-gutters">
@@ -175,7 +175,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">ASTIR PALACE HOTEL ATHENS</h5>
+                <h5 class="card-title">Astir Palace, Athens</h5>
                 <p class="card-text">On the sophisticated Athens Riviera..</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
@@ -187,7 +187,7 @@
 
     </main>
     <footer>
-      <div class="contacts">
+      <div id="contacts">
         <div class="list-group">
           <button type="button" class="list-group-item list-group-item-action active">
             How you can find us
@@ -220,35 +220,44 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="bookNowModalTitle">Modal title</h5>
+            <h5 class="modal-title" id="bookNowModalTitle">Book room:</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <h2>Book room:</h2>
-            <form method="GET">
-              <select class="form-control form-control-lg">
-                <option>Large select</option>
+            
+            <form action="https://formspree.io/volodymyrherych22@gmail.com" method="POST" id="book-form">
+              <div class="select-form">
+              <select size="3" name="hotelselect">
+                  <option disabled>Select city</option>
+                  <option selected value="D'Morvie">Paris</option>
+                  <option value="Deluxe Hotel">New-York</option>
+                  <option value="Hotel Bora">London</option>
               </select>
-              <select class="form-control">
-                <option>Default select</option>
+              <select size="3" name="roomselect">
+                  <option disabled>Select room</option>
+                  <option selected value="standart">Standart</option>
+                  <option value="luxe">Luxe</option>
+                  <option value="president">President apartaments</option>
               </select>
-              <select class="form-control form-control-sm">
-                <option>Small select</option>
-              </select>
-            </form>
+              </div>
+              <div class="input-form">
+              <div><input type="date" id="checkin"><label for="checkin">Check in</label></div>
+              <div><input type="date" id="checkout"><label for="checkout">Check out</label></div>
+              </div>
+          </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button form="book-form" type="button submit" class="btn btn-primary">Send</button>
           </div>
         </div>
       </div>
     </div>
 
   </div>
-  
+
   <h6>Created by Volodymyr Herych</h6>
 
 
