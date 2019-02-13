@@ -1,5 +1,5 @@
 body{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     background-color: #eaeff5;
 }
@@ -39,5 +39,14 @@ iframe{
 .navbar-brand, h2{
     font-family: impact;
     font-size: 1.3rem;
+}
+
+@media (min-width: 576px){
+    body{
+        width: 95%;
+    }
+}
+h6{
+    text-align: center;
 }
 
