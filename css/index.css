@@ -10,9 +10,8 @@ h2{
     font-size: 36px;
 }
 .buttons-services{
-    display: grid;
-    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1fr;
+    display: flex;
+    justify-content: space-around;
     margin: 20px auto;
 }
 footer{
@@ -27,6 +26,9 @@ iframe{
     width: 100%;
     height: 300px;
     margin: 20px auto;
+}
+.badge-info{
+    width: 60px;
 }
 
 
