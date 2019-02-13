@@ -10,6 +10,7 @@ h2{
     font-size: 36px;
 }
 .buttons-services{
+    width: 95%;
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
@@ -27,10 +28,7 @@ iframe{
     height: 300px;
     margin: 20px auto;
 }
-.badge-info{
-    width: 60px;
-    margin: 0 40px;
-}
+
 .badge-pill{
     display: flex;
     justify-content: center;
